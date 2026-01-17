@@ -1,13 +1,15 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(209, 161, 255);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'home' %}">MB</a>
+    <a class="navbar-brand" href="{% url 'home' %}">MessageBoard</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+    <div class="collapse navbar-collapse d-flex" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" aria-current="page" href="{% url 'home Two' %}">Home</a>
         <a class="nav-link" href="{% url 'about' %}">About</a>
+        <a class="nav-link" href="{% url 'post_list' %}">Posts</a>
+        <a class="nav-link" href="{% url 'post_new' %}">New Post</a>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@
         <h1>Posts</h1>
         {% for item in posts %}
             <h2>{{item.title}}</h2>
-            <a href="#">Continue reading...</a>
+            <a href="{% url 'post_detail' item.id %}">Continue reading...</a>
         {% endfor %}
     </div>
 {% endblock %}
